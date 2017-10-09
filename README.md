@@ -13,6 +13,8 @@ The only part of the script that needs to be modified is the label you'll be usi
 
 This insures that inactive campaigns don't suddenly start running again.
 
+You'll also want to schedule the script to run hourly.
+
 ## Limitations
 
 - Adwords scripts can only run once an hour.

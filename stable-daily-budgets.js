@@ -18,6 +18,7 @@ function main() {
 		.campaigns()
 
 		// Define your own label here
+		// IMPORTANT NOTE: LABEL IS CASE SENSITIVE
 		.withCondition("LabelNames CONTAINS_ANY ['Active']")
 
 	// Goes through the selected campaigns
@@ -38,6 +39,7 @@ function main() {
 		// Pauses the campaign if the spend exceeds the budget
 		if (cost > budget.getAmount()){
 			campaign.pause();
+			Logger.log("Today's campaign spend EXCEEDS the daily maximum!");
 			Logger.log("Campaign paused");
 			Logger.log("================");
 			}
@@ -45,7 +47,8 @@ function main() {
 			// Activates or leaves the campaign on if the spend spend does not exceed the budget
 			else if (cost < budget.getAmount()){
 				campaign.enable();
-				Logger.log("Campaign enabled");
+				Logger.log("Today's campaign spend DOES NOT exceed the daily maximum.");
+				Logger.log("Campaign remains enabled");
 				Logger.log("================");
 		}
 	}

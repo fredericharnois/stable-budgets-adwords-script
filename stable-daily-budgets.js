@@ -7,7 +7,7 @@
 *
 * Version: 1.0
 *
-* Google AdWords Script maintained by Frederic Harnois
+* Google Adds Script maintained by Frederic Harnois
 * fred@fredericharnois.com
 *
 **/

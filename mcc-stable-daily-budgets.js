@@ -7,7 +7,9 @@
 * spent more than their daily budget and reactivate them the next day.
 *
 * Version: 1.0.1
+*
 * Google AdWords Script maintained by Frederic Harnois
+* fred@fredericharnois.com
 *
 **/
 
